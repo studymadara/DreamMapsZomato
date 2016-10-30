@@ -1,0 +1,50 @@
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wagh.dreammapszomato.MapsActivity" />
+
+
+    <EditText
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/mainsearchedit"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:singleLine="true"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="25sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@android:color/background_light"
+        android:hint="Search for a Cafe"
+        />
+
+
+        <Button
+            android:alpha="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginBottom="10dp"
+            android:layout_alignBottom="@id/map"
+            android:id="@+id/mainsearchbutton"/>
+
+
+</RelativeLayout>
